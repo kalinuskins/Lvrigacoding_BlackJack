@@ -44,8 +44,8 @@ public class Deck {
     }
 
     public Card takeCard() {
-        Card topCard = cards.getint(0);
-        cards.removeint(0);
+        Card topCard = cards.get(0);
+        cards.remove(0);
 
         return topCard;
     }
