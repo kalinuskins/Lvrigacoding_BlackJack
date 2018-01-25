@@ -5,14 +5,21 @@
  */
 package graphics;
 
-import javax.swing.JLabel;
+import Data.Card;
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
 
 /**
  *
  * @author oleg
  */
-public class CardImage extends JLabel {
-    public CardImage(){
+public class CardImage extends JPanel {
+    
+    public CardImage(Card card){
+        String cardName = card.getFullName() + ".png";
         
+        this.setIcon(new ImageIcon(
+                getClass().getResource("/images/"+cardName)
+        ));
     }
 }

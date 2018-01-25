@@ -5,17 +5,26 @@
  */
 package Data;
 
+import graphics.CardHolder;
+
 /**
  *
  * @author oleg
  */
 public class BlackjackForm extends javax.swing.JFrame {
-
+    private CardHolder playerCards;
+    private CardHolder dealerCards;
     /**
      * Creates new form BlackjackForm
      */
     public BlackjackForm() {
         initComponents();
+        
+        playerCards = new CardHolder();
+        dealerCards = new CardHolder();
+        
+        this.playerPanel.add(playerCards);
+        this.dealerPanel.add(dealerCards);
     }
 
     /**

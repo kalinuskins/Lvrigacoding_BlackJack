@@ -5,10 +5,14 @@
  */
 package graphics;
 
+import javax.swing.JPanel;
 /**
  *
  * @author oleg
  */
-public class CardHolder extends Jpanel {
+public class CardHolder extends JPanel {
     
+    public CardHolder(){
+        
+    }
 }
